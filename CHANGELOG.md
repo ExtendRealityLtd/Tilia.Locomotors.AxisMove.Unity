@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.0.2...v1.0.3) (2020-06-08)
+
+#### Bug Fixes
+
+* **prefab:** only use y rotation on movement facing direction ([34da9bc](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/34da9bc1fa608da0538bdfe398283eb80644ab7c))
+  > The facing direction offset on the movement was previously using all axes for the rotation facing direction, which meant if the facing direction object (e.g. headset) was pointing at the ground then the facing direction would be straight down and this would mean the target would not move.
+  > 
+  > A new feature in Zinnia means the facing direction can determine which axes want to be used for the rotational offset so this is now used and only the y rotation is used so it works over a simple 2 plane.
+
 ### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.0.1...v1.0.2) (2020-06-08)
 
 #### Miscellaneous Chores
