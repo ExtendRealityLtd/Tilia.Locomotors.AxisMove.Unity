@@ -50,6 +50,10 @@ MonoBehaviour:
     yState: 0
     zState: 1
   facingDirection: {fileID: 0}
+  applyFacingDirectionOnAxis:
+    xState: 0
+    yState: 1
+    zState: 0
 --- !u!1 &4314744630004568399
 GameObject:
   m_ObjectHideFlags: 0
