@@ -12,7 +12,7 @@ The Camera SnapRotator warps the main camera instantly left/right with a camera 
 
 This is useful if you want to give a player the possibility to turn quickly around.
 
-The outcome of this How-To Guide is to learn how to add the SnapRotator prefab to the scene and utilize the custom actions to provide the input for the rotation. For better testing in the Editor, this How-To guide connects `BooleanAction` with a `Input.CombinedActions.BooleanTo1DAxisAction`. When using controller prefabs and the corresponding ThumbStickMovement, the wrapping is not needed. Instead the `FloatActions` of the MovementAxisInput for the HorizontalAxis can be used directly.
+The outcome of this How-To Guide is to learn how to add the SnapRotator prefab to the scene and utilize the custom actions to provide the input for the rotation. For better testing in the Editor, this How-To guide connects `BooleanAction` with a `Input.CombinedActions.BooleanTo1DAxisAction`.
 
 ## Prerequisites
 
@@ -41,21 +41,17 @@ Expand the `Tilia Input UnityInputManager Unity` package directory in the Unity 
 
 ### Step 3
 
-Locate `CameraRigs.SpatialSimulator -> Input -> ControlObjectsInput -> LeftControllerInput -> Buttons -> ButtonOne` and `CameraRigs.SpatialSimulator -> Input -> ControlObjectsInput -> LeftControllerInput -> Buttons -> ButtonTwo` inputs in the hierarchy.
-
-### Step 4
-
-Add an empty child object to `SnapRotationProxy` and name it `TurnLeftProxy`. Add `BooleanAction` and `BooleanToNegativeFloat` components to it. Drag a reference of gameobject `CameraRigs.SpatialSimulator -> Input -> ControlObjectsInput -> LeftControllerInput -> Buttons -> ButtonOne` into the `Sources` of the `BooleanAction` component. These represent the left and right mouse button in the Unity Editor. You can use any other inputs, e.g. the horizontal Thumbstick Axis from Oculus Touch controllers.
+Locate `CameraRigs.SpatialSimulator -> Input -> ControlObjectsInput -> LeftControllerInput -> Buttons -> ButtonOne` and `CameraRigs.SpatialSimulator -> Input -> ControlObjectsInput -> LeftControllerInput -> Buttons -> ButtonTwo` inputs in the hierarchy. These represent the left and right mouse button in the Unity Editor.
 
 ![Left and Right mouse button inputs](assets/images/MouseButtons.PNG)
 
-### Step 5
+### Step 4
 
-Select the Drag the `Input.CombinedActions.BooleanTo1DAxisAction` gameobject and drag `ButtonOne` on the `Negative Input` and `ButtonTwo` on the `Positive Input` fields.
+Select the `Input.CombinedActions.BooleanTo1DAxisAction` gameobject and drag `ButtonOne` on the `Negative Input` and `ButtonTwo` on the `Positive Input` fields.
 
 ![BooleanTo1DAxisAction negative and positive input](assets/images/1DAxisInput.PNG)
 
-### Step 6
+### Step 5
 
 Select `Locomotors.AxisMove.WarpAndSnapRotate` gameobject and add the references:
 
@@ -67,8 +63,12 @@ Select `Locomotors.AxisMove.WarpAndSnapRotate` gameobject and add the references
 
 ### Done
 
-Now you have a SnapRotator attached. Everytime you click the left mouse button your camera will rotate left by 45°. When pressing the right mouse button the camera will rotate right by 45°.
+Now you have a SnapRotator attached. When dealing with controllers you can use any other inputs, e.g. the horizontal Thumbstick Axis from Oculus Touch controllers. In this case you can skip Steps 2, 3, 4 and reference the `FloatAction` for ThumbstickMovement directly at `Horizontal Axis` on the `Locomotors.AxisMove.WarpAndSnapRotate` gameobject.
+
+Everytime you click the left mouse button your camera will rotate left by 45°.
 
 ![Left mouse button -> rotating left](assets/images/GifConverter_Left.gif)
+
+When pressing the right mouse button the camera will rotate right by 45°.
 
 ![Right mouse button -> rotating right](assets/images/GifConverter_Right.gif)
