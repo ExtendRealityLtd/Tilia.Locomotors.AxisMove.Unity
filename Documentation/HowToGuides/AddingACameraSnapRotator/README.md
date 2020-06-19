@@ -39,7 +39,7 @@ Create an empty gameobject, rename it to `SnapRotationProxy` and add a `FloatAct
 
 Create a new script, name it `BooleanToNegativeFloat` and add the following code:
 
-'''
+´´´
 using System;
 using UnityEngine.Events;
 using Zinnia.Data.Type.Transformation;
@@ -68,7 +68,7 @@ public class BooleanToNegativeFloat : Transformer<bool, float, BooleanToNegative
         return input ? -1f : 0f;
     }
 }
-'''
+´´´
 
 ### Step 4
 
