@@ -54,14 +54,14 @@ Select the `Input.CombinedActions.BooleanTo1DAxisAction` gameobject and drag `Bu
 Select `Locomotors.AxisMove.WarpAndSnapRotate` gameobject and add the references:
 
 * `Horizontal Axis` -> `Input.CombinedActions.BooleanTo1DAxisAction`
-* `Target`-> `CameraRigs.TrackedAlias-> Aliases -> PlayAreaAlias`
-* `Scene Cameras` -> `CameraRigs.TrackedAlias-> Aliases -> SceneCameras`
+* `Target`-> `CameraRigs.TrackedAlias -> Aliases -> PlayAreaAlias`
+* `Scene Cameras` -> `CameraRigs.TrackedAlias -> Aliases -> SceneCameras`
 
 ![References for Locomotors.AxisMove.WarpAndSnapRotate](assets/images/AddTargetAndCameraAndInput.PNG)
 
 ### Done
 
-Now you have a SnapRotator attached. When dealing with controllers you can use any other inputs, e.g. the horizontal Thumbstick Axis from Oculus Touch controllers. In this case you can skip Steps 2, 3, 4 and reference the `FloatAction` for ThumbstickMovement directly at `Horizontal Axis` on the `Locomotors.AxisMove.WarpAndSnapRotate` gameobject.
+Press Play in the Editor and now you have a SnapRotator attached. When dealing with controllers you can use any other inputs, e.g. the horizontal Thumbstick Axis from Oculus Touch controllers. In this case you can skip Steps 2, 3, 4 and reference the `FloatAction` for ThumbstickMovement directly at `Horizontal Axis` on the `Locomotors.AxisMove.WarpAndSnapRotate` gameobject.
 
 Everytime you click the left mouse button your camera will rotate left by 45°.
 
