@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.0.3...v1.1.0) (2020-07-03)
+
+#### Features
+
+* **API:** add auto-generated API documentation ([2f20c94](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/2f20c946d9fac678fcd414953a269eda854f1340))
+  > The API documentation is auto generated with docfx and converted to markdown via turndown in a custom nodejs script.
+
+#### Bug Fixes
+
+* **package.json:** add docfx.json file ([a37ed6e](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/a37ed6e3fc7adce0a444fb9ec955783eeeef13eb))
+  > The docfx.json file was missing from the package.json causing the build process to fail. It has now been added.
+
 ### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.0.2...v1.0.3) (2020-06-08)
 
 #### Bug Fixes
