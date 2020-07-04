@@ -311,9 +311,9 @@ PrefabInstance:
       propertyPath: ValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 7143328720995329176, guid: 500c4efffcae48341a018274f1293dc9,
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
         type: 3}
-      propertyPath: source
+      propertyPath: timeMultiplier
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
