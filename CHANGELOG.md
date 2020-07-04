@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.1.3](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.2...v1.1.3) (2020-07-04)
+
+#### Bug Fixes
+
+* **Prefabs:** set Time Multiplier property on MovementMutator ([bd9f4c7](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/bd9f4c78ff401e179a86e41949cb8bb2c7a9fa73))
+  > The CombinedActions package has now been updated so the AxesToVector3 prefab exposes the Time Component Extractor multiplier on the Facade so instead of manually overriding the Time Component at the lower level, it can now be changed on the facade.
+  > 
+  > This brings in that change, plus renames the prefabs to something more meaningful.
+
 ### [1.1.2](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.1...v1.1.2) (2020-07-03)
 
 #### Miscellaneous Chores
