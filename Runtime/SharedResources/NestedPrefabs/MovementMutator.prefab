@@ -316,6 +316,41 @@ PrefabInstance:
       propertyPath: timeMultiplier
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: deadzoneCalculation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: lateralDeadzone.minimum
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: lateralDeadzone.maximum
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: verticalDeadzone.minimum
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: verticalDeadzone.maximum
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: longitudinalDeadzone.minimum
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5404456050670069340, guid: 500c4efffcae48341a018274f1293dc9,
+        type: 3}
+      propertyPath: longitudinalDeadzone.maximum
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 500c4efffcae48341a018274f1293dc9, type: 3}
 --- !u!4 &6396025159911319581 stripped
