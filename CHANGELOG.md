@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.7](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.6...v1.1.7) (2020-07-11)
+
+#### Bug Fixes
+
+* **Prefab:** use combined deadzone to prevent double diagonal speed ([2442c5a](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/2442c5a88038dfa27ba893ec7bf9525c678944cb))
+  > The CombinedActions AxesToVector3Action now provides a mechanism of combining the axis values to determine a zonal deadzone and using this fixes the issue where pushing in a diagonal direction would cause a doubling of speed.
+
 ### [1.1.6](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.5...v1.1.6) (2020-07-11)
 
 #### Miscellaneous Chores
