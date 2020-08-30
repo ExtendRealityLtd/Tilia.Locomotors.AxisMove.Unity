@@ -1,5 +1,19 @@
 # Changelog
 
+### [1.1.17](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.16...v1.1.17) (2020-08-30)
+
+#### Bug Fixes
+
+* **Prefabs:** ensure smooth rotate uses delta time for time multiplier ([a48522f](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/a48522fc96263fcbc2b0d99ed50845e5ceaae213))
+  > There was an issue where smooth rotate would increase in speed with every rotation due to the Time Multiplier being set to `Time` so it was increasing from the original time frame.
+  > 
+  > The Rotation Mutator used within the Smooth Rotate operation is now using the `Time Step Type Delta Time` Time Multiplier so it should not increase in speed with every rotation.
+
+#### Code Refactoring
+
+* **Prefabs:** update internal name to match prefab name ([14a6b89](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/14a6b891a9f65d1451b38b7058146bea3be61239))
+  > The prefab GameObject name was changed so the internal `m_Name` has been updated to match.
+
 ### [1.1.16](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.15...v1.1.16) (2020-08-29)
 
 #### Miscellaneous Chores
