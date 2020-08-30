@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 4673726243956408044}
   - component: {fileID: 8217565341955995875}
   m_Layer: 0
-  m_Name: Locomotors.AxisMove.SlideAndSnapRotate
+  m_Name: Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7328395537461744615}
   - component: {fileID: 1829750917173539401}
   m_Layer: 0
-  m_Name: Locomotors.AxisMove.SlideAndSmoothRotate
+  m_Name: Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,12 @@ PrefabInstance:
     - target: {fileID: 4795697142387887123, guid: b334f24fe80d78048be071bd89067f4e,
         type: 3}
       propertyPath: multiplier.y
-      value: 0.1
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795697142387887123, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: timeMultiplier
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
         type: 3}
