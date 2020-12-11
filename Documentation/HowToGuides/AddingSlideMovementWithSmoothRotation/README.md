@@ -20,13 +20,13 @@ We've already implemented a simple slide movement locomotion, but this simply mo
 
 We don't need the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the previous guide as the prefab we use in this guide will already give us the slide movement for forward and backward, so let's start off by disabling that GameObject.
 
-Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the Unity hierarchy and disable the GameObject.
+Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the Unity Hierarchy window and disable the GameObject.
 
 ![Disable Slide Prefab](assets/images/DisableSlidePrefab.png)
 
 ### Step 2
 
-Expand the `Tilia Locomotors AxisMove Unity` Package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate` prefab into the Unity hierarchy window.
+Expand the `Tilia Locomotors AxisMove Unity` package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate` prefab into the Unity Hierarchy window.
 
 ![Adding Axis Move Smooth Rotate To Scene](assets/images/AddingAxisMoveSmoothRotateToScene.png)
 
@@ -52,7 +52,7 @@ Drag and drop the `CameraRigs.TrackedAlias -> Aliases -> HeadsetAlias` GameObjec
 
 ### Step 5
 
-We now have to set an additional property to deal with the rotational offset. This is because in a virtual reality environment, our headset is the position we are physically standing in our play area, but we are going to rotate our play area. The problem now occurs that if we rotate our play area and we're not standing in the physical centre of our play area then the world will look odd when it rotates around our view because our standing point is not the point of rotation.
+We now have to set an additional property to deal with the rotational offset. This is because in a virtual reality environment, our headset is the position we are physically standing in our play area, but we are going to rotate our play area. The problem now occurs that if we rotate our play area and we're not standing in the physical center of our play area then the world will look odd when it rotates around our view because our standing point is not the point of rotation.
 
 To compensate for this, we can set a rotational pivot to change where we rotate the play area around, which is going to be our headset position. We cannot use the `HeadsetAlias` for this as the pivot point needs to be a child GameObject of our `PlayAreaAlias`, but we have a `HeadsetOrigin` GameObject that we can use instead.
 
