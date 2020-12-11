@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.2.0...v1.2.1) (2020-12-11)
+
+#### Bug Fixes
+
+* **HowToGuides:** apply document styling guidelines ([8e1798b](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/8e1798b5075b2f50aef619b9059d478f4ddd02b2))
+  > The document style guidelines have been updated and now have been applied to the guides in this repo.
+
 ## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.21...v1.2.0) (2020-12-11)
 
 #### Features
