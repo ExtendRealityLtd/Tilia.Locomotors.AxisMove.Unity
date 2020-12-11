@@ -20,13 +20,13 @@ Another form of rotational locomotion is to snap the player to a new direction w
 
 We don't need the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the previous guide as the prefab we use in this guide will already give us the slide movement for forward and backward, so let's start off by disabling that GameObject.
 
-Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the Unity hierarchy and disable the GameObject.
+Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from the Unity Hierarchy window and disable the GameObject.
 
 ![Disable Slide Prefab](assets/images/DisableSlidePrefab.png)
 
 ### Step 2
 
-Expand the `Tilia Locomotors AxisMove Unity` Package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate` prefab into the Unity hierarchy window.
+Expand the `Tilia Locomotors AxisMove Unity` package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate` prefab into the Unity Hierarchy window.
 
 ![Adding Axis Move Snap Rotate To Scene](assets/images/AddingAxisMoveSnapRotateToScene.png)
 
@@ -72,7 +72,7 @@ Drag and drop the `CameraRigs.TrackedAlias -> Aliases -> SceneCameras` GameObjec
 
 We're pretty much ready to go now, the one last thing we may want to change is the amount of rotation that is applied per rotational snap. We'll need to delve into the prefab hierarchy again to get to this setting. By default this rotational snap setting is set to rotate us `45` degrees with every snap. Let's make it `30` degrees.
 
-Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate -> Internal -> RotationMutator -> InputAxis` GameObject from the Unity Hierarchy and on the `Axes To Vector3 Action` component change the `Multiplier` property value to `X: 1` `Y: 30` `Z: 1`.
+Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SnapRotate -> Internal -> RotationMutator -> InputAxis` GameObject from the Unity Hierarchy window and on the `Axes To Vector3 Action` component change the `Multiplier` property value to `X: 1` `Y: 30` `Z: 1`.
 
 ![Update Rotation Multiplier](assets/images/UpdateRotationMultiplier.png)
 

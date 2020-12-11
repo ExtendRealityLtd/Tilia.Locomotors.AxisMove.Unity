@@ -12,7 +12,7 @@ Slide movement is a form of locomotion that allows an object to move around a sc
 
 ## Prerequisites
 
-* [Add the Tilia.CameraRigs.TrackedAlias.Unity] prefab to the scene Hierarchy.
+* [Add the Tilia.CameraRigs.TrackedAlias.Unity -> CameraRigs.TrackedAlias] prefab to the scene hierarchy.
 * [Install the Tilia.Input.UnityInputManager] package dependency in to your [Unity] project.
 * [Install the Tilia.Locomotors.AxisMove.Unity] package dependency in to your Unity project.
 
@@ -20,15 +20,15 @@ Slide movement is a form of locomotion that allows an object to move around a sc
 
 ### Step 1
 
-Expand the `Tilia Input UnityInputManager` Package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Unity hierarchy window.
+Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Unity Hierarchy window.
 
 ![Adding Axis Input Action To Scene](assets/images/AddingAxisInputActionToScene.png)
 
 ### Step 2
 
-Rename the newly added `Input.UnityInputManager.1DAxisAction` GameObject in the Unity hierarchy window to `HorizontalAxisAction`.
+Rename the newly added `Input.UnityInputManager.1DAxisAction` GameObject in the Unity Hierarchy window to `HorizontalAxisAction`.
 
-Select the `HorizontalAxisAction` GameObject from the Unity hierarchy and on the `Unity Input Manager Axis 1D Action` component change the `Axis Name` value to `Horizontal`.
+Select the `HorizontalAxisAction` GameObject from the Unity Hierarchy window and on the `Unity Input Manager Axis 1D Action` component change the `Axis Name` value to `Horizontal`.
 
 ![Update Axis Name To Horizontal](assets/images/UpdateAxisNameToHorizontal.png)
 
@@ -38,7 +38,7 @@ Select the `HorizontalAxisAction` GameObject from the Unity hierarchy and on the
 
 Duplicate the `HorizontalAxisAction` GameObject by right clicking on the `HorizontalAxisAction` GameObject and selecting `Duplicate` from the context menu then rename the duplicated `HorizontalAxisAction (1)` to `VerticalAxisAction`.
 
-Select the `VerticalAxisAction` GameObject from the Unity hierarchy and on the `Unity Input Manager Axis 1D Action` component change the `Axis Name` value to `Vertical`.
+Select the `VerticalAxisAction` GameObject from the Unity Hierarchy window and on the `Unity Input Manager Axis 1D Action` component change the `Axis Name` value to `Vertical`.
 
 ![Update Axis Name To Vertical](assets/images/UpdateAxisNameToVertical.png)
 
@@ -46,7 +46,7 @@ Select the `VerticalAxisAction` GameObject from the Unity hierarchy and on the `
 
 ### Step 4
 
-Expand the `Tilia Locomotors AxisMove Unity` Package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` prefab into the Unity hierarchy window.
+Expand the `Tilia Locomotors AxisMove Unity` package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` prefab into the Unity Hierarchy window.
 
 ![Adding Axis Move Slide To Scene](assets/images/AddingAxisMoveSlideToScene.png)
 
@@ -84,7 +84,7 @@ We're pretty much set up and ready to go now with this slide locomotion. However
 
 We can tweak this by delving into the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` prefab and adjusting some deadzone settings.
 
-Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide -> Internal -> MovementMutator -> InputAxis` GameObject from the Unity Hierarchy and on the `Axes To Vector3 Action` component change the `Lateral Deadzone` property values to `-0.45` / `0.45`. Do the same with the `Vertical Deadzone` and `Longitudinal Deadzone` property values.
+Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide -> Internal -> MovementMutator -> InputAxis` GameObject from the Unity Hierarchy window and on the `Axes To Vector3 Action` component change the `Lateral Deadzone` property values to `-0.45` / `0.45`. Do the same with the `Vertical Deadzone` and `Longitudinal Deadzone` property values.
 
 ![Update Input Axis Deadzones](assets/images/UpdateInputAxisDeadzones.png)
 
@@ -94,8 +94,8 @@ Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide -> Internal -> M
 
 Play the Unity scene and you will be able to slide your player around by pushing the thumbstick/touchpad on your input device.
 
-[Add the Tilia.CameraRigs.TrackedAlias.Unity]: https://github.com/ExtendRealityLtd/Tilia.CameraRigs.TrackedAlias.Unity/tree/master/Documentation/HowToGuides/AddingATrackedAlias
-[Install the Tilia.Input.UnityInputManager]: https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/tree/master/Documentation/HowToGuides/Installation
+[Add the Tilia.CameraRigs.TrackedAlias.Unity -> CameraRigs.TrackedAlias]: https://github.com/ExtendRealityLtd/Tilia.CameraRigs.TrackedAlias.Unity/tree/master/Documentation/HowToGuides/AddingATrackedAlias/README.md
+[Install the Tilia.Input.UnityInputManager]: https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/tree/master/Documentation/HowToGuides/Installation/README.md
 [Install the Tilia.Locomotors.AxisMove.Unity]: ../Installation/README.md 
 [Unity]: https://unity3d.com/
 [Unity XR input map]: https://docs.unity3d.com/2018.3/Documentation/Manual/xr_input.html
