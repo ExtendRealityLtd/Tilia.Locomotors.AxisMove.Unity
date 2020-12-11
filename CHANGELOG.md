@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.21...v1.2.0) (2020-12-11)
+
+#### Features
+
+* **HowToGuides:** add guide for axis locomotion ([80cf5bd](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/80cf5bd2f5fdb0b1563c6bea8b410e632003ead6))
+  > Guides have been added that shows how to set up simple axis locomotion concepts.
+
 ### [1.1.21](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.1.20...v1.1.21) (2020-11-01)
 
 #### Miscellaneous Chores
