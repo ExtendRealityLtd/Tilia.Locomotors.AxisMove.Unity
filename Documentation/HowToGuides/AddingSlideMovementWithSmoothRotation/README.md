@@ -26,9 +26,7 @@ Select the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` GameObject from
 
 ### Step 2
 
-Expand the `Tilia Locomotors AxisMove Unity` package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate` prefab into the Unity Hierarchy window.
-
-![Adding Axis Move Smooth Rotate To Scene](assets/images/AddingAxisMoveSmoothRotateToScene.png)
+Add a `Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Locomotors -> AxisMove -> Locomotors.AxisMove.Vertical-Slide.Horizontal-SmoothRotate` from the Unity main top menu.
 
 ### Step 3
 
