@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.2.18...v1.3.0) (2021-04-07)
+
+#### Features
+
+* **Utility:** add prefab creator ([d13d23a](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/d13d23a6d46c0748aff7c348a14bfe627de7156b))
+  > The latest version of Zinnia has the basis of a prefab creator that can be used to enable easy adding of prefabs to a scene without needing to drag and drop from directories. Instead a new menu item is added for quickly adding prefabs. The guide has been updated to accommodate this and the FodyWeavers.xml is now located in the root to serve both the Runtime and Editor scripts.
+
+#### Bug Fixes
+
+* **package.json:** add missing reference to Editor directory ([93010a1](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/93010a10d8f7cc0cf49febccb0f09d9a766bea57))
+  > The build will fail without referencing this new Editor directory so it has now been added to the package.
+
 ### [1.2.18](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.2.17...v1.2.18) (2021-03-29)
 
 #### Miscellaneous Chores
