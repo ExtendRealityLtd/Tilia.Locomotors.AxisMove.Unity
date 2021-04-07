@@ -20,9 +20,7 @@ Slide movement is a form of locomotion that allows an object to move around a sc
 
 ### Step 1
 
-Expand the `Tilia Input UnityInputManager` package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager -> Runtime -> Prefabs -> Actions` directory then drag and drop the `Input.UnityInputManager.1DAxisAction` prefab into the Unity Hierarchy window.
-
-![Adding Axis Input Action To Scene](assets/images/AddingAxisInputActionToScene.png)
+Add a `Input.UnityInputManager.1DAxisAction` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Input -> UnityInputManager -> Actions -> Input.UnityInputManager.1DAxisAction` from the Unity main top menu.
 
 ### Step 2
 
@@ -46,9 +44,7 @@ Select the `VerticalAxisAction` GameObject from the Unity Hierarchy window and o
 
 ### Step 4
 
-Expand the `Tilia Locomotors AxisMove Unity` package directory in the Unity Project window and select the `Packages -> Tilia Locomotors AxisMove Unity -> Runtime -> Prefabs` directory then drag and drop the `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` prefab into the Unity Hierarchy window.
-
-![Adding Axis Move Slide To Scene](assets/images/AddingAxisMoveSlideToScene.png)
+Add a `Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Locomotors -> AxisMove -> Locomotors.AxisMove.Vertical-Slide.Horizontal-Slide` from the Unity main top menu.
 
 ### Step 5
 
