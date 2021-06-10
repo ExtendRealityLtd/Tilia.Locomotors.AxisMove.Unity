@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.3.6](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.5...v1.3.6) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([2838fb5](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/2838fb58d7aa763379c4c0c94bf3abefc689c2ae))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.1.0 to 1.2.0. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.1.0...v1.2.0)
+* **README.md:** update title logo to related-media repo ([966cf7e](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/966cf7e08a4a0cc1f98d1f180e4b3a040aa3dab8))
+  > The title logo is now located on the related-media repo.
+
 ### [1.3.5](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.4...v1.3.5) (2021-05-09)
 
 #### Miscellaneous Chores
