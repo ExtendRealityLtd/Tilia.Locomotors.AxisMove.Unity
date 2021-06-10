@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.7](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.6...v1.3.7) (2021-06-10)
+
+#### Bug Fixes
+
+* **Materials:** update fade material to use better shader ([7f8a1dc](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/7f8a1dcd17bce1d828a6a0ef7dbf5259f375aed0))
+  > The new TransparentColorBlockout shader is a better, more simpler shader to use for screen fading and it is also compatible with the URP approach to screen fading.
+
 ### [1.3.6](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.5...v1.3.6) (2021-06-10)
 
 #### Miscellaneous Chores
