@@ -2,7 +2,7 @@
     "name": "io.extendreality.tilia.locomotors.axismove.unity",
     "displayName": "Tilia Locomotors AxisMove Unity",
     "description": "A collection of prefabs that can move a given GameObject based on axis input data for the Unity software.",
-    "version": "1.3.7",
+    "version": "1.3.8",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [
