@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.9](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.8...v1.3.9) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.input.combinedactions.unity ([cf5b25a](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/cf5b25a92dd7640ff4cb1282ab7189e4c03aec3c))
+  > Bumps [io.extendreality.tilia.input.combinedactions.unity](https://github.com/ExtendRealityLtd/Tilia.Input.CombinedActions.Unity) from 1.9.2 to 1.9.3. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Input.CombinedActions.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Input.CombinedActions.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Input.CombinedActions.Unity/compare/v1.9.2...v1.9.3)
+
 ### [1.3.8](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.7...v1.3.8) (2021-06-10)
 
 #### Miscellaneous Chores
