@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.26](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.25...v1.3.26) (2022-01-13)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.41.0 to 1.42.0 ([ded112c](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/ded112c1c2cfcac67f7fd05f2a8fe09b8d21c059))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.41.0 to 1.42.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.41.0...v1.42.0)
+
 ### [1.3.25](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.24...v1.3.25) (2022-01-12)
 
 #### Miscellaneous Chores
