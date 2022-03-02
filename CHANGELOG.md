@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.35...v1.4.0) (2022-03-02)
+
+#### Features
+
+* **package.json:** add information urls to package ([e1f5f9e](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/e1f5f9e2039b59f94b91bd739b17704cf41a4225))
+  > The changelog, documentation and license url has been added to the package.json as these are used within the Unity package manager.
+
 ### [1.3.35](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.3.34...v1.3.35) (2022-02-14)
 
 #### Miscellaneous Chores
