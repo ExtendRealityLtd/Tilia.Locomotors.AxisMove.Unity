@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.4.5](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.4.4...v1.4.5) (2022-03-15)
+
+#### Miscellaneous Chores
+
+* **dependabot:** remove bddckr from reviewers ([b04e5bb](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/b04e5bbe9e670fa31d1dae14f1e8508e948ed1f8))
+  > Chris hasn't been actively part of the project for a while.
+* **deps:** bump io.extendreality.zinnia.unity from 1.47.0 to 1.47.1 ([e66262f](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/e66262f7411a7f1a578bbf3371fbe68785270c97))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.47.0 to 1.47.1. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.47.0...v1.47.1)
+
 ### [1.4.4](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v1.4.3...v1.4.4) (2022-03-15)
 
 #### Miscellaneous Chores
