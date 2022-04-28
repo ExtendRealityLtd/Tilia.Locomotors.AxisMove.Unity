@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Locomotors.AxisMove
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using Tilia.Input.CombinedActions;
     using UnityEngine;
     using Zinnia.Data.Attribute;
@@ -15,81 +13,227 @@
     public class AxisMoveConfigurator : MonoBehaviour
     {
         #region Facade Settings
+        [Header("Facade Settings")]
+        [Tooltip("The public facade.")]
+        [SerializeField]
+        [Restricted]
+        private AxisMoveFacade facade;
         /// <summary>
         /// The public facade.
         /// </summary>
-        [Serialized]
-        [field: Header("Facade Settings"), DocumentedByXml, Restricted]
-        public AxisMoveFacade Facade { get; protected set; }
+        public AxisMoveFacade Facade
+        {
+            get
+            {
+                return facade;
+            }
+            protected set
+            {
+                facade = value;
+            }
+        }
         #endregion
 
         #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The mapping for the Facade.HorizontalAxis to the AxesToVector3Action.LateralAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action horizontalToLateral;
         /// <summary>
         /// The mapping for the <see cref="Facade.HorizontalAxis"/> to the <see cref="AxesToVector3Action.LateralAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: Header("Reference Settings"), DocumentedByXml, Restricted]
-        public AxesToVector3Action HorizontalToLateral { get; protected set; }
+        public AxesToVector3Action HorizontalToLateral
+        {
+            get
+            {
+                return horizontalToLateral;
+            }
+            protected set
+            {
+                horizontalToLateral = value;
+            }
+        }
+        [Tooltip("The mapping for the Facade.HorizontalAxis to the AxesToVector3Action.VerticalAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action horizontalToVertical;
         /// <summary>
         /// The mapping for the <see cref="Facade.HorizontalAxis"/> to the <see cref="AxesToVector3Action.VerticalAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public AxesToVector3Action HorizontalToVertical { get; protected set; }
+        public AxesToVector3Action HorizontalToVertical
+        {
+            get
+            {
+                return horizontalToVertical;
+            }
+            protected set
+            {
+                horizontalToVertical = value;
+            }
+        }
+        [Tooltip("The mapping for the Facade.HorizontalAxis to the AxesToVector3Action.LongitudinalAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action horizontalToLongitudinal;
         /// <summary>
         /// The mapping for the <see cref="Facade.HorizontalAxis"/> to the <see cref="AxesToVector3Action.LongitudinalAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public AxesToVector3Action HorizontalToLongitudinal { get; protected set; }
+        public AxesToVector3Action HorizontalToLongitudinal
+        {
+            get
+            {
+                return horizontalToLongitudinal;
+            }
+            protected set
+            {
+                horizontalToLongitudinal = value;
+            }
+        }
+        [Tooltip("The mapping for the Facade.VerticalAxis to the AxesToVector3Action.LateralAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action verticalToLateral;
         /// <summary>
         /// The mapping for the <see cref="Facade.VerticalAxis"/> to the <see cref="AxesToVector3Action.LateralAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public AxesToVector3Action VerticalToLateral { get; protected set; }
+        public AxesToVector3Action VerticalToLateral
+        {
+            get
+            {
+                return verticalToLateral;
+            }
+            protected set
+            {
+                verticalToLateral = value;
+            }
+        }
+        [Tooltip("The mapping for the Facade.VerticalAxis to the AxesToVector3Action.VerticalAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action verticalToVertical;
         /// <summary>
         /// The mapping for the <see cref="Facade.VerticalAxis"/> to the <see cref="AxesToVector3Action.VerticalAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public AxesToVector3Action VerticalToVertical { get; protected set; }
+        public AxesToVector3Action VerticalToVertical
+        {
+            get
+            {
+                return verticalToVertical;
+            }
+            protected set
+            {
+                verticalToVertical = value;
+            }
+        }
+        [Tooltip("The mapping for the Facade.VerticalAxis to the AxesToVector3Action.LongitudinalAxis.")]
+        [SerializeField]
+        [Restricted]
+        private AxesToVector3Action verticalToLongitudinal;
         /// <summary>
         /// The mapping for the <see cref="Facade.VerticalAxis"/> to the <see cref="AxesToVector3Action.LongitudinalAxis"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public AxesToVector3Action VerticalToLongitudinal { get; protected set; }
+        public AxesToVector3Action VerticalToLongitudinal
+        {
+            get
+            {
+                return verticalToLongitudinal;
+            }
+            protected set
+            {
+                verticalToLongitudinal = value;
+            }
+        }
+        [Tooltip("The TransformPositionMutator that will move the Facade.Target.")]
+        [SerializeField]
+        [Restricted]
+        private TransformPositionMutator positionMutator;
         /// <summary>
         /// The <see cref="TransformPositionMutator"/> that will move the <see cref="Facade.Target"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public TransformPositionMutator PositionMutator { get; protected set; }
+        public TransformPositionMutator PositionMutator
+        {
+            get
+            {
+                return positionMutator;
+            }
+            protected set
+            {
+                positionMutator = value;
+            }
+        }
+        [Tooltip("The TransformPositionExtractor that will check the Facade.Target current position change.")]
+        [SerializeField]
+        [Restricted]
+        private TransformPositionExtractor positionExtractor;
         /// <summary>
         /// The <see cref="TransformPositionExtractor"/> that will check the <see cref="Facade.Target"/> current position change.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public TransformPositionExtractor PositionExtractor { get; protected set; }
+        public TransformPositionExtractor PositionExtractor
+        {
+            get
+            {
+                return positionExtractor;
+            }
+            protected set
+            {
+                positionExtractor = value;
+            }
+        }
+        [Tooltip("The TransformEulerRotationMutator that will rotate the Facade.Target.")]
+        [SerializeField]
+        [Restricted]
+        private TransformEulerRotationMutator rotationMutator;
         /// <summary>
         /// The <see cref="TransformEulerRotationMutator"/> that will rotate the <see cref="Facade.Target"/>.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public TransformEulerRotationMutator RotationMutator { get; protected set; }
+        public TransformEulerRotationMutator RotationMutator
+        {
+            get
+            {
+                return rotationMutator;
+            }
+            protected set
+            {
+                rotationMutator = value;
+            }
+        }
+        [Tooltip("The TransformEulerRotationExtractor that will check the Facade.Target current rotation change.")]
+        [SerializeField]
+        [Restricted]
+        private TransformEulerRotationExtractor rotationExtractor;
         /// <summary>
         /// The <see cref="TransformEulerRotationExtractor"/> that will check the <see cref="Facade.Target"/> current rotation change.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public TransformEulerRotationExtractor RotationExtractor { get; protected set; }
+        public TransformEulerRotationExtractor RotationExtractor
+        {
+            get
+            {
+                return rotationExtractor;
+            }
+            protected set
+            {
+                rotationExtractor = value;
+            }
+        }
+        [Tooltip("The CameraColorOverlay that will fade the cameras to blink.")]
+        [SerializeField]
+        [Restricted]
+        private CameraColorOverlay cameraBlink;
         /// <summary>
         /// The <see cref="CameraColorOverlay"/> that will fade the cameras to blink.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public CameraColorOverlay CameraBlink { get; protected set; }
+        public CameraColorOverlay CameraBlink
+        {
+            get
+            {
+                return cameraBlink;
+            }
+            protected set
+            {
+                cameraBlink = value;
+            }
+        }
         #endregion
 
         /// <summary>

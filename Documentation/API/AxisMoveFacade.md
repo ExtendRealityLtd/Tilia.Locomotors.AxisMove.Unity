@@ -19,6 +19,12 @@ The public interface into the Axis Move Prefabs.
   * [Target]
   * [VerticalAxis]
 * [Methods]
+  * [ClearForwardOffset()]
+  * [ClearHorizontalAxis()]
+  * [ClearRotationPivot()]
+  * [ClearSceneCameras()]
+  * [ClearTarget()]
+  * [ClearVerticalAxis()]
   * [OnAfterForwardOffsetChange()]
   * [OnAfterHorizontalAxisChange()]
   * [OnAfterRotationPivotChange()]
@@ -139,6 +145,66 @@ public FloatAction VerticalAxis { get; set; }
 
 ### Methods
 
+#### ClearForwardOffset()
+
+Clears [ForwardOffset].
+
+##### Declaration
+
+```
+public virtual void ClearForwardOffset()
+```
+
+#### ClearHorizontalAxis()
+
+Clears [HorizontalAxis].
+
+##### Declaration
+
+```
+public virtual void ClearHorizontalAxis()
+```
+
+#### ClearRotationPivot()
+
+Clears [RotationPivot].
+
+##### Declaration
+
+```
+public virtual void ClearRotationPivot()
+```
+
+#### ClearSceneCameras()
+
+Clears [SceneCameras].
+
+##### Declaration
+
+```
+public virtual void ClearSceneCameras()
+```
+
+#### ClearTarget()
+
+Clears [Target].
+
+##### Declaration
+
+```
+public virtual void ClearTarget()
+```
+
+#### ClearVerticalAxis()
+
+Clears [VerticalAxis].
+
+##### Declaration
+
+```
+public virtual void ClearVerticalAxis()
+```
+
 #### OnAfterForwardOffsetChange()
 
 Called after [ForwardOffset] has been changed.
@@ -212,6 +278,12 @@ protected virtual void OnAfterVerticalAxisChange()
 [SceneCameras]: AxisMoveFacade.md#SceneCameras
 [Target]: AxisMoveFacade.md#Target
 [VerticalAxis]: AxisMoveFacade.md#VerticalAxis
+[ForwardOffset]: AxisMoveFacade.md#ForwardOffset
+[HorizontalAxis]: AxisMoveFacade.md#HorizontalAxis
+[RotationPivot]: AxisMoveFacade.md#RotationPivot
+[SceneCameras]: AxisMoveFacade.md#SceneCameras
+[Target]: AxisMoveFacade.md#Target
+[VerticalAxis]: AxisMoveFacade.md#VerticalAxis
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -227,6 +299,12 @@ protected virtual void OnAfterVerticalAxisChange()
 [Target]: #Target
 [VerticalAxis]: #VerticalAxis
 [Methods]: #Methods
+[ClearForwardOffset()]: #ClearForwardOffset
+[ClearHorizontalAxis()]: #ClearHorizontalAxis
+[ClearRotationPivot()]: #ClearRotationPivot
+[ClearSceneCameras()]: #ClearSceneCameras
+[ClearTarget()]: #ClearTarget
+[ClearVerticalAxis()]: #ClearVerticalAxis
 [OnAfterForwardOffsetChange()]: #OnAfterForwardOffsetChange
 [OnAfterHorizontalAxisChange()]: #OnAfterHorizontalAxisChange
 [OnAfterRotationPivotChange()]: #OnAfterRotationPivotChange
