@@ -271,16 +271,20 @@
             if (HorizontalToLateral != null)
             {
                 HorizontalToLateral.LateralAxis = Facade.HorizontalAxis;
+                HorizontalToLateral.Multiplier = new Vector3(Facade.HorizontalAxisMultiplier, HorizontalToLateral.Multiplier.y, HorizontalToLateral.Multiplier.z);
                 HorizontalAction = HorizontalToLateral;
+
             }
             else if (HorizontalToVertical != null)
             {
                 HorizontalToVertical.VerticalAxis = Facade.HorizontalAxis;
+                HorizontalToVertical.Multiplier = new Vector3(HorizontalToVertical.Multiplier.x, Facade.HorizontalAxisMultiplier, HorizontalToVertical.Multiplier.z);
                 HorizontalAction = HorizontalToVertical;
             }
             else if (HorizontalToLongitudinal != null)
             {
                 HorizontalToLongitudinal.LongitudinalAxis = Facade.HorizontalAxis;
+                HorizontalToLongitudinal.Multiplier = new Vector3(HorizontalToLongitudinal.Multiplier.x, HorizontalToLongitudinal.Multiplier.y, Facade.HorizontalAxisMultiplier);
                 HorizontalAction = HorizontalToLongitudinal;
             }
         }
@@ -293,16 +297,19 @@
             if (VerticalToLateral != null)
             {
                 VerticalToLateral.LateralAxis = Facade.VerticalAxis;
+                VerticalToLateral.Multiplier = new Vector3(Facade.VerticalAxisMultiplier, VerticalToLateral.Multiplier.y, VerticalToLateral.Multiplier.z);
                 VerticalAction = VerticalToLateral;
             }
             else if (VerticalToVertical != null)
             {
                 VerticalToVertical.VerticalAxis = Facade.VerticalAxis;
+                VerticalToVertical.Multiplier = new Vector3(VerticalToVertical.Multiplier.x, Facade.VerticalAxisMultiplier, VerticalToVertical.Multiplier.z);
                 VerticalAction = VerticalToVertical;
             }
             else if (VerticalToLongitudinal != null)
             {
                 VerticalToLongitudinal.LongitudinalAxis = Facade.VerticalAxis;
+                VerticalToLongitudinal.Multiplier = new Vector3(VerticalToLongitudinal.Multiplier.x, VerticalToLongitudinal.Multiplier.y, Facade.VerticalAxisMultiplier);
                 VerticalAction = VerticalToLongitudinal;
             }
         }

@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: {fileID: 0}
   verticalAxis: {fileID: 0}
+  horizontalAxisMultiplier: 0.5
+  verticalAxisMultiplier: 0.5
   target: {fileID: 0}
   forwardOffset: {fileID: 0}
   rotationPivot: {fileID: 0}
@@ -54,13 +56,9 @@ MonoBehaviour:
   PositionChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Tilia.Locomotors.AxisMove.AxisMoveFacade+UnityEvent, Tilia.Locomotors.AxisMove.Unity.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   RotationChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Tilia.Locomotors.AxisMove.AxisMoveFacade+UnityEvent, Tilia.Locomotors.AxisMove.Unity.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   configuration: {fileID: 4416863543721941783}
 --- !u!1 &8656648980463976475
 GameObject:
@@ -125,11 +123,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4193476453515831855}
     m_Modifications:
-    - target: {fileID: 4314744630004568399, guid: cb8d74e8397d7f144abc31f4a5554e4f,
-        type: 3}
-      propertyPath: m_Name
-      value: MovementMutator
-      objectReference: {fileID: 0}
     - target: {fileID: 4314744630004568396, guid: cb8d74e8397d7f144abc31f4a5554e4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -184,6 +177,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314744630004568399, guid: cb8d74e8397d7f144abc31f4a5554e4f,
+        type: 3}
+      propertyPath: m_Name
+      value: MovementMutator
       objectReference: {fileID: 0}
     - target: {fileID: 8562143198972185944, guid: cb8d74e8397d7f144abc31f4a5554e4f,
         type: 3}
