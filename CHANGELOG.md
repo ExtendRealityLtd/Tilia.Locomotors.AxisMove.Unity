@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v2.0.36...v2.1.0) (2023-06-29)
+
+#### Features
+
+* **Facade:** expose axis multipliers at facade level ([60d0942](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/commit/60d0942391b5219b0fd47f97fc3b3365a9b9f580))
+  > The AxisMoveFacade now has a property for Horizontal Axis Multiplier and Vertical Axis Multiplier which will update the relevant internal multiplier vector value on the relevant InputAxis.
+  > 
+  > This makes it easier to change speed of movement/rotation without needing to drill into the prefab components.
+  > 
+  > The prefabs have been updated to set their default multiplier values by these settings as well.
+
 ### [2.0.36](https://github.com/ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity/compare/v2.0.35...v2.0.36) (2023-06-14)
 
 #### Miscellaneous Chores
