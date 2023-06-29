@@ -14,10 +14,12 @@ The public interface into the Axis Move Prefabs.
   * [Configuration]
   * [ForwardOffset]
   * [HorizontalAxis]
+  * [HorizontalAxisMultiplier]
   * [RotationPivot]
   * [SceneCameras]
   * [Target]
   * [VerticalAxis]
+  * [VerticalAxisMultiplier]
 * [Methods]
   * [ClearForwardOffset()]
   * [ClearHorizontalAxis()]
@@ -27,10 +29,12 @@ The public interface into the Axis Move Prefabs.
   * [ClearVerticalAxis()]
   * [OnAfterForwardOffsetChange()]
   * [OnAfterHorizontalAxisChange()]
+  * [OnAfterHorizontalAxisMultiplierChange()]
   * [OnAfterRotationPivotChange()]
   * [OnAfterSceneCamerasChange()]
   * [OnAfterTargetChange()]
   * [OnAfterVerticalAxisChange()]
+  * [OnAfterVerticalAxisMultiplierChange()]
 
 ## Details
 
@@ -103,6 +107,16 @@ The horizontal axis to control the left/right motion.
 public FloatAction HorizontalAxis { get; set; }
 ```
 
+#### HorizontalAxisMultiplier
+
+Multiply the incoming horizontal axis value to increase/decrease speed of movement.
+
+##### Declaration
+
+```
+public float HorizontalAxisMultiplier { get; set; }
+```
+
 #### RotationPivot
 
 An optional pivot point to rotate the [Target] around.
@@ -141,6 +155,16 @@ The vertical axis to control the forward/backward motion.
 
 ```
 public FloatAction VerticalAxis { get; set; }
+```
+
+#### VerticalAxisMultiplier
+
+Multiply the incoming vertical axis value to increase/decrease speed of movement.
+
+##### Declaration
+
+```
+public float VerticalAxisMultiplier { get; set; }
 ```
 
 ### Methods
@@ -225,6 +249,16 @@ Called after [HorizontalAxis] has been changed.
 protected virtual void OnAfterHorizontalAxisChange()
 ```
 
+#### OnAfterHorizontalAxisMultiplierChange()
+
+Called after [HorizontalAxisMultiplier] has been changed.
+
+##### Declaration
+
+```
+protected virtual void OnAfterHorizontalAxisMultiplierChange()
+```
+
 #### OnAfterRotationPivotChange()
 
 Called after [RotationPivot] has been changed.
@@ -265,6 +299,16 @@ Called after [VerticalAxis] has been changed.
 protected virtual void OnAfterVerticalAxisChange()
 ```
 
+#### OnAfterVerticalAxisMultiplierChange()
+
+Called after [VerticalAxisMultiplier] has been changed.
+
+##### Declaration
+
+```
+protected virtual void OnAfterVerticalAxisMultiplierChange()
+```
+
 [Tilia.Locomotors.AxisMove]: README.md
 [Target]: AxisMoveFacade.md#Target
 [Target]: AxisMoveFacade.md#Target
@@ -280,10 +324,12 @@ protected virtual void OnAfterVerticalAxisChange()
 [VerticalAxis]: AxisMoveFacade.md#VerticalAxis
 [ForwardOffset]: AxisMoveFacade.md#ForwardOffset
 [HorizontalAxis]: AxisMoveFacade.md#HorizontalAxis
+[HorizontalAxisMultiplier]: AxisMoveFacade.md#HorizontalAxisMultiplier
 [RotationPivot]: AxisMoveFacade.md#RotationPivot
 [SceneCameras]: AxisMoveFacade.md#SceneCameras
 [Target]: AxisMoveFacade.md#Target
 [VerticalAxis]: AxisMoveFacade.md#VerticalAxis
+[VerticalAxisMultiplier]: AxisMoveFacade.md#VerticalAxisMultiplier
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -294,10 +340,12 @@ protected virtual void OnAfterVerticalAxisChange()
 [Configuration]: #Configuration
 [ForwardOffset]: #ForwardOffset
 [HorizontalAxis]: #HorizontalAxis
+[HorizontalAxisMultiplier]: #HorizontalAxisMultiplier
 [RotationPivot]: #RotationPivot
 [SceneCameras]: #SceneCameras
 [Target]: #Target
 [VerticalAxis]: #VerticalAxis
+[VerticalAxisMultiplier]: #VerticalAxisMultiplier
 [Methods]: #Methods
 [ClearForwardOffset()]: #ClearForwardOffset
 [ClearHorizontalAxis()]: #ClearHorizontalAxis
@@ -307,7 +355,9 @@ protected virtual void OnAfterVerticalAxisChange()
 [ClearVerticalAxis()]: #ClearVerticalAxis
 [OnAfterForwardOffsetChange()]: #OnAfterForwardOffsetChange
 [OnAfterHorizontalAxisChange()]: #OnAfterHorizontalAxisChange
+[OnAfterHorizontalAxisMultiplierChange()]: #OnAfterHorizontalAxisMultiplierChange
 [OnAfterRotationPivotChange()]: #OnAfterRotationPivotChange
 [OnAfterSceneCamerasChange()]: #OnAfterSceneCamerasChange
 [OnAfterTargetChange()]: #OnAfterTargetChange
 [OnAfterVerticalAxisChange()]: #OnAfterVerticalAxisChange
+[OnAfterVerticalAxisMultiplierChange()]: #OnAfterVerticalAxisMultiplierChange

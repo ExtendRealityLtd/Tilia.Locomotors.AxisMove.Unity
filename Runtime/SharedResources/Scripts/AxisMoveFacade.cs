@@ -63,6 +63,48 @@
                 }
             }
         }
+        [Tooltip("Multiply the incoming horizontal axis value to increase/decrease speed of movement.")]
+        [SerializeField]
+        private float horizontalAxisMultiplier = 1f;
+        /// <summary>
+        /// Multiply the incoming horizontal axis value to increase/decrease speed of movement.
+        /// </summary>
+        public float HorizontalAxisMultiplier
+        {
+            get
+            {
+                return horizontalAxisMultiplier;
+            }
+            set
+            {
+                horizontalAxisMultiplier = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterHorizontalAxisMultiplierChange();
+                }
+            }
+        }
+        [Tooltip("Multiply the incoming vertical axis value to increase/decrease speed of movement.")]
+        [SerializeField]
+        private float verticalAxisMultiplier = 1f;
+        /// <summary>
+        /// Multiply the incoming vertical axis value to increase/decrease speed of movement.
+        /// </summary>
+        public float VerticalAxisMultiplier
+        {
+            get
+            {
+                return verticalAxisMultiplier;
+            }
+            set
+            {
+                verticalAxisMultiplier = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterVerticalAxisMultiplierChange();
+                }
+            }
+        }
         #endregion
 
         #region Target Settings
@@ -277,6 +319,22 @@
         /// Called after <see cref="VerticalAxis"/> has been changed.
         /// </summary>
         protected virtual void OnAfterVerticalAxisChange()
+        {
+            Configuration.ConfigureVerticalAxis();
+        }
+
+        /// <summary>
+        /// Called after <see cref="HorizontalAxisMultiplier"/> has been changed.
+        /// </summary>
+        protected virtual void OnAfterHorizontalAxisMultiplierChange()
+        {
+            Configuration.ConfigureHorizontalAxis();
+        }
+
+        /// <summary>
+        /// Called after <see cref="VerticalAxisMultiplier"/> has been changed.
+        /// </summary>
+        protected virtual void OnAfterVerticalAxisMultiplierChange()
         {
             Configuration.ConfigureVerticalAxis();
         }

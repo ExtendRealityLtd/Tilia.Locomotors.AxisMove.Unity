@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: {fileID: 0}
   verticalAxis: {fileID: 0}
+  horizontalAxisMultiplier: 30
+  verticalAxisMultiplier: 1
   target: {fileID: 0}
   forwardOffset: {fileID: 0}
   rotationPivot: {fileID: 0}
@@ -54,13 +56,9 @@ MonoBehaviour:
   PositionChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Tilia.Locomotors.AxisMove.AxisMoveFacade+UnityEvent, Tilia.Locomotors.AxisMove.Unity.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   RotationChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: Tilia.Locomotors.AxisMove.AxisMoveFacade+UnityEvent, Tilia.Locomotors.AxisMove.Unity.Runtime,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   configuration: {fileID: 5325944900120606737}
 --- !u!1 &4422014672373375629
 GameObject:
@@ -126,10 +124,45 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6277491826606506398}
     m_Modifications:
-    - target: {fileID: 688418527863998161, guid: b334f24fe80d78048be071bd89067f4e,
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
         type: 3}
-      propertyPath: m_Name
-      value: RotationMutator
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5325944900120606737}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NotifyRotationChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 688418527863998158, guid: b334f24fe80d78048be071bd89067f4e,
         type: 3}
@@ -186,6 +219,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 688418527863998161, guid: b334f24fe80d78048be071bd89067f4e,
+        type: 3}
+      propertyPath: m_Name
+      value: RotationMutator
+      objectReference: {fileID: 0}
     - target: {fileID: 4795697142387887123, guid: b334f24fe80d78048be071bd89067f4e,
         type: 3}
       propertyPath: multiplier.y
@@ -195,46 +233,6 @@ PrefabInstance:
         type: 3}
       propertyPath: timeMultiplier
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5325944900120606737}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NotifyRotationChanged
-      objectReference: {fileID: 0}
-    - target: {fileID: 651950426903558978, guid: b334f24fe80d78048be071bd89067f4e,
-        type: 3}
-      propertyPath: Modified.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b334f24fe80d78048be071bd89067f4e, type: 3}
@@ -287,11 +285,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6277491826606506398}
     m_Modifications:
-    - target: {fileID: 4314744630004568399, guid: cb8d74e8397d7f144abc31f4a5554e4f,
-        type: 3}
-      propertyPath: m_Name
-      value: MovementMutator
-      objectReference: {fileID: 0}
     - target: {fileID: 4314744630004568396, guid: cb8d74e8397d7f144abc31f4a5554e4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314744630004568399, guid: cb8d74e8397d7f144abc31f4a5554e4f,
+        type: 3}
+      propertyPath: m_Name
+      value: MovementMutator
       objectReference: {fileID: 0}
     - target: {fileID: 8562143198972185944, guid: cb8d74e8397d7f144abc31f4a5554e4f,
         type: 3}
